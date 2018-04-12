@@ -44,6 +44,8 @@ div {
     width: 50%;
     overflow: hidden;
     height: 100%;
+    color: #05547b;
+    font-size: 20px;
 }
 
 
@@ -51,7 +53,7 @@ div {
     display: block;
 }
 .title h1 {
-    margin-left: 2%;
+    margin-left: 1%;
     margin-top: 6%;
     size: "15";
 }
@@ -98,6 +100,13 @@ article, aside, footer, header, hgroup, main, nav, section {
     text-align: center;
     height: 100%;
 }
+.nav2 ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
 
 ul, menu, dir {
     display: block;
@@ -124,6 +133,23 @@ ul, menu, dir {
     overflow: hidden;
 }
 
+.nav2 ul li {
+    background: #F3C01E ;
+    width: 50%;
+    margin-top: 25px;
+    display: inline-block;
+    height: 80%;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #05547b;
+    font-family: candara;
+    font-size: 30px;
+    text-align: center;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+}
 li {
     display: list-item;
     text-align: -webkit-match-parent;
@@ -212,13 +238,21 @@ p {
 .img_start {
     display: block;
     margin: auto;
-    width: 100%;
+    width: 90%;
 }
 .img_logo {
     display: block;
     margin: auto;
     width: 20%;
 }
+
+.img_estructurahtml {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+
 .sidebar {
     background: #04344c;
     text-align: center;
@@ -234,7 +268,7 @@ p {
     -moz-box-shadow: 0px 9px 34px -1px rgba(0,0,0,0.59);
     box-shadow: 0px 9px 34px -1px rgba(0,0,0,0.59);
 }
-
+box-shadow: 0px 9px 34px -1px rgba(0,0,0,0.59);
 
 element.style {
     position: static;
@@ -602,9 +636,3 @@ iframe[Attributes Style] {
     border-left-width: 0px;
 }
 
-iframe {
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
-}
