@@ -29,7 +29,7 @@
             <li> <a href="index.html">Inicio</a></li>
             <li> <a href="github.html">Git y GitHub</a></li>
             <li> <a href="html.html">Html 5</a></li>
-            <li> <a href="css.html">Css</a></li>
+            <li> <a href="css.html">Css3</a></li>
             <li> <a href="multimedia.html">Multimedia</a></li>
          	<li> <a href="colaboradores.html">Colaboradores</a></li>        
         </ul>
@@ -43,7 +43,122 @@
 
         <div class="content" id="inicio">
 
-            <p>4</p>
+            <img class="img_logo" src="img/css3.png">
+
+            <h2>¿Qué es CSS?</h2>
+            <p>(Cascading Style Sheets o CSS) Las hojas de estilo en cascada, son las reglas y estilos de representación en diferentes dispositivos, ya sean pantallas de equipos de escritorio, portatiles, moviles, impresoras u otro dispositivo capas de mostras contenidos web. En pocas palabras, sirve para ajustar el contenido de la pagina en el dispositivo que se observe y funciona en conjunto con HTML.</p>
+
+            <h2>¿Qué es CSS3?</h2>
+            <p>Cascading Style Sheets Level 3, como herramienta nos permite tener una gran variedad opciones para el diseño web y esta funcionando desde el 2005 y es el estandar actual.</p>
+
+            <h2>Ventajas de trabajar en CSS3</h2>
+            <p><b>  •  </b>Es gratuito</p>
+            <p><b>  •  </b>Todos los estilos son en una sola hoja</p>
+            <p><b>  •  </b>Genera sitios más rapidos</p>
+            <p><b>  •  </b>El diseño es adaptativo entre dispositivos</p>
+
+            <h2>Modelo de cajas</h2>
+            <p>Para le trabajo de las cajas, se debe tener en cuenta dos propiedades para definirlas, el ancho (height) y el alto (width).</p>
+            <p>Un ejemplo podria ser el siguiente</p>
+
+            <font size="2" color="#0080FF">
+            <p><b>  div{  </b></p>
+            <p><b>  background: #5DEAA8;  </b></p>
+            <p><b>  height: 100px; width: 200px;  </b></p>
+            <p><b>  width: 200px;  </b></p>
+            <p><b>  }  </b></p>
+            </font>
+            
+
+            <p>Adicionalmente a estas, tenemos el Margin, Padding y Border que nos brindaran mayor control al momento de organizar los elementos.</p>
+
+            <font size="2" color="#0080FF">
+            <p><b>  div{  </b></p>
+            <p><b>  border: 10px solid #3EC483;  </b></p>
+            <p><b>  background: #5DEAA8;  </b></p>
+            <p><b>  height: 100px;  </b></p>
+            <p><b>  width: 200px;   </b></p>
+            <p><b>  padding: 10px;  </b></p>
+            <p><b>  margin: 10px;  </b></p>
+            <p><b>  }  </b></p>
+            </font>
+
+            <h2>Zonas de elementos</h2>
+            <p>Palabras clave para hacer referencia a una zona u orientación concreta sobre un elemento</p>
+            <p><b>  • Top:  </b>Se refiere a la parte superior del elemento.</p>
+            <p><b>  •   Left:  </b>Se refiere a la parte izquierda del elemento.</p>
+            <p><b>  •   Right:  </b> Se refiere a la parte derecha del elemento.</p>
+            <p><b>  •   Bottom:  </b> Se refiere a la parte inferior del elemento.</p>
+            <p><b>  •   Center:  </b>En algunos casos se puede especificar el valor center para referirse a la posición central entre dos extremos.</p>
+            
+            <h2>Estilos internos y externos</h2>
+            <p><b>  •   Internos:  </b>Se realiza utilizando un elemnto “style” y esta escrito en la parte inicial de HTML.</p>
+
+            <font size="2" color="#0080FF">
+            <p><b>  < !DOCTYPE html>  </b></p>
+            <p><b>  < html lang="es-ES">  </b></p>
+            <p><b>  < head>  </b></p>
+            <p><b>  < meta charset="utf-8">  </b></p>
+            <p><b>  < title>Ejemplo de estilo interno</title>  </b></p>
+            <p><b>  < style>  </b></p>
+            <p><b>  p {color:red;}  </b></p>
+            <p><b>  </ style>  </b></p>
+            <p><b>  </ head>  </b></p>
+            <p><b>  < body>  </b></p>
+            <p><b>  < p>Esto es un párrafo de color rojo.< /p>  </b></p>
+            <p><b>  </ body>  </b></p>
+            <p><b>  </ html>  </b></p>
+            </font>
+
+
+
+            <p><b>  •  Externos:  </b>Emplea un archivo CSS externo al documento HTML, usado por medio de un link el cual permite enlazar el HTML con un archivo externo.</p>
+             <font size="2" color="#0080FF">
+            <p><b>  < !DOCTYPE html>  </b></p>
+            <p><b>  < html lang="es-ES">  </b></p>
+            <p><b>  < head>  </b></p>
+            <p><b>  < meta charset="utf-8">  </b></p>
+            <p><b>  < title>Ejemplo de estilo interno< /title>  </b></p>
+            <p><b>  link rel="stylesheet" href="styles.css">  </b></p>
+            <p><b>  </ head>  </b></p>
+            <p><b>  < body>  </b></p>
+            <p><b>  < p>Esto es un párrafo de color rojo.< /p>  </b></p>
+            <p><b>  </ body>  </b></p>
+            <p><b>  </ html>  </b></p>
+            </font>
+
+            <h2>Selectores CSS</h2>
+            <p><b>  •   Selector universal:  </b>Se utilizan para seleccionar todos los elementos de la pagina, se indica mediante un (*).</p>
+            <p><b>  •   Selector de tipo o etiqueta:  </b>Selecciona todos los elementos de la pagina cuyaetiqueta HTML. Si se quiere aplicar los mismos estilos a dos etiquetas diferentes, se puede encadenar los selectores y permite agrupar todas las reglas individuales en una sola regla selector múltiple.</p>
+            <font size="2" color="#0080FF">
+            <p><b>  h1, h2, h3 {  </b></p>
+            <p><b>  color: #8A8E27;  </b></p>
+            <p><b>  font-weight: normal;  </b></p>
+            <p><b>  font-family: Arial, Helvetica, sans-serif;  </b></p>
+            <p><b>  }  </b></p>
+            </font>
+
+            <p><b>  •   Selector descendente:   </b>Selecciona los elementos que se encuentran dentro de otros elementos. Se utiliza por medio del simbolo < p >. Los selectores descendentes permiten aumentar la precisión del selector de tipo o etiqueta. Así, utilizando el selector descendente es posible aplicar diferentes estilos a los elementos del mismo tipo. El siguiente ejemplo amplía el anterior y muestra de color azul todo el texto de los < span > contenidos dentro de un < h1 ></p>
+
+            <font size="2" color="#0080FF">
+            <p><b>  p span { color: red; }  </b></p>
+            <p><b>  h1 span { color: blue; }  </b></p>
+            </font>
+
+            <p><b>  •   Selectores de ID:   </b>Permite seleccionar un elemento de la página a través del valor de su atributo id, solo selecciona un elemento de la pagina porque el valor del atributo id no se pueda repetir en dos elementos diferentes de una misma pagina. La sintaxis de los selectores de ID es muy parecida a la de los selectores de clase, salvo que se utiliza el símbolo de la almohadilla (#) en vez del punto (.) como prefijo del nombre de la regla CSS11</p>
+
+
+            <br>
+            <br>
+            <nav class="nav2">
+            <ul>
+           <li> <a href="http://www.dirinfo.unsl.edu.ar/dweb/Propiedades_css.pdf" target="_blank" >Etiquetas CSS</a></li>
+           </ul>
+            </nav>
+            <br>
+            <br>
+            
+    
 	
 			
 			</div>

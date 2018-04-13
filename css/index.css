@@ -228,7 +228,7 @@ h2 {
 }
 
 p {
-	font-size: 1.3em;
+	font-size: 1.2em;
     display: block;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -251,6 +251,14 @@ p {
     margin: auto;
     width: 50%;
 }
+
+
+.img_documentocss {
+    display: block;
+    margin: auto;
+    width: 107%;
+}
+
 
 
 .sidebar {
