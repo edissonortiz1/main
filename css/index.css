@@ -258,6 +258,11 @@ p {
     margin: auto;
     width: 107%;
 }
+.img_todas {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
 
 
 
